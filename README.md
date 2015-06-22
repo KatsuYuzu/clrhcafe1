@@ -4,6 +4,8 @@
 
 IT勉強会コミュニティ「CLR/H」のアクティブメンバーが発起人となって、毎月の定例勉強会とはまた趣を別として突発的にプチ勉強会的な集まりを開くという企画です。
 
+- [CLR-H カフェ #1 - connpass](http://clrh.connpass.com/event/16552/)
+
 ## 何をやるの?
 
 今回は、[@KatsuYuze](https://twitter.com/katsuyuzu) が便利な AngularJS プラグインを使っているとの情報を [@jsakamoto](https://twitter.com/jsakamoto) が聞きつけたので、じゃぁそのプラグイン情報を教えてもらおう、といった回になにります。
@@ -22,8 +24,9 @@ IT勉強会コミュニティ「CLR/H」のアクティブメンバーが発起�
 
 ## 参考
 
-- [Angular Hotkeys](http://chieffancypants.github.io/angular-hotkeys/)
-- [Angular Loading Bar](https://chieffancypants.github.io/angular-loading-bar/)
+- [angularjsで通信中に自動的に読み込みバー、くるくるを表示してくれるAngular Loading Bar](http://katsuyuzu.hatenablog.jp/entry/2015/06/23/010149)
+- [angularjsでショートカットキーを実現してくれるAngular Hotkeys](http://katsuyuzu.hatenablog.jp/entry/2015/06/23/012404)
+- [angularjsで画面表示時に実行前の式が表示されないようにするng-cloak](http://katsuyuzu.hatenablog.jp/entry/2015/06/23/015205)
 
 ## 最後に
 
