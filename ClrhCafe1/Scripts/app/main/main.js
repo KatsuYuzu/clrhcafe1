@@ -9,7 +9,7 @@ var App;
     (function (Main) {
         "use strict";
         var MainController = (function () {
-            function MainController($scope, $http, hotkeys, navigationService) {
+            function MainController($scope, $http, hotkeys, navigationService, rootUrl) {
                 hotkeys.bindTo($scope).add({
                     combo: "a",
                     allowIn: ["INPUT"],
@@ -20,16 +20,18 @@ var App;
                 }).add({
                     combo: "s",
                     allowIn: ["INPUT"],
-                    description: "bing に問い合わせしてAPIの代替",
+                    description: "API の呼び出し",
                     callback: function (event) {
-                        $http.get("http://www.bing.com/");
+                        $http.get(rootUrl + "/home/test").then(function (response) {
+                            alert(response.data);
+                        });
                     }
                 });
             }
             return MainController;
         })();
         Main.MainController = MainController;
-        angular.module("app").controller("mainController", ["$scope", "$http", "hotkeys", "navigationService", MainController]).directive("appMain", function () {
+        angular.module("app").controller("mainController", ["$scope", "$http", "hotkeys", "navigationService", "rootUrl", MainController]).directive("appMain", function () {
             return {
                 controller: "mainController as main"
             };
