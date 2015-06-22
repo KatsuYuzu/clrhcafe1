@@ -294,6 +294,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app\app.ts" />
     <TypeScriptCompile Include="Scripts\app\common\header.ts" />
+    <TypeScriptCompile Include="Scripts\app\common\hotkeysExtensions.ts" />
     <TypeScriptCompile Include="Scripts\app\common\navigationService.ts" />
     <TypeScriptCompile Include="Scripts\app\main\main.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular-hotkeys\angular-hotkeys.d.ts" />
