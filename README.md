@@ -1,4 +1,4 @@
-﻿# CLR/H カフェ #clrhcafe1
+# CLR/H カフェ #clrhcafe1
 
 ## 何の集まり?
 
@@ -12,6 +12,15 @@ IT勉強会コミュニティ「CLR/H」のアクティブメンバーが発起�
 なので、集まった方々で、AngularJS ネタに限らず、TypeScript や grunt など Web アプリのクライアント側コードにまつわる話題で盛り上がれるかもしれません?
 
 ## 教材
+
+- [Scripts/app](ClrhCafe1/Scripts/app)
+ - [app.ts](ClrhCafe1/Scripts/app/app.ts#L19-L27)
+ - [main/main.ts](ClrhCafe1/Scripts/app/main/main.ts#L17-L35)
+ - [common/hotkeysExtensions.ts](ClrhCafe1/Scripts/app/common/hotkeysExtensions.ts)
+- [Content/app](ClrhCafe1/Content/app)
+ - [app.less](ClrhCafe1/Content/app/app.less#L29-L31)
+
+## 参考
 
 - [Angular Hotkeys](http://chieffancypants.github.io/angular-hotkeys/)
 - [Angular Loading Bar](https://chieffancypants.github.io/angular-loading-bar/)
