@@ -4,7 +4,7 @@
 
 IT勉強会コミュニティ「CLR/H」のアクティブメンバーが発起人となって、毎月の定例勉強会とはまた趣を別として突発的にプチ勉強会的な集まりを開くという企画です。
 
-- [CLR-H カフェ #1 - connpass](http://clrh.connpass.com/event/16552/)
+- [CLR/H カフェ #1 - connpass](http://clrh.connpass.com/event/16552/)
 
 ## 何をやるの?
 
