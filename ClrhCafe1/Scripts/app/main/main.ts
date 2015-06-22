@@ -12,7 +12,8 @@ module App.Main {
             $scope: ng.IScope,
             $http: ng.IHttpService,
             hotkeys: angular.hotkeys.HotkeysProvider,
-            navigationService: Common.INavigationService) {
+            navigationService: Common.INavigationService,
+            rootUrl: string) {
 
             hotkeys.bindTo($scope)
                 .add(
@@ -28,9 +29,13 @@ module App.Main {
                 {
                     combo: "s",
                     allowIn: ["INPUT"],
-                    description: "bing に問い合わせしてAPIの代替",
+                    description: "API の呼び出し",
                     callback: (event: Event) => {
-                        $http.get("http://www.bing.com/");
+                        $http.get(rootUrl + "/home/test")
+                            .then(
+                            (response: ng.IHttpPromiseCallbackArg<{}>) => {
+                                alert(response.data);
+                            });
                     }
                 });
 
@@ -39,7 +44,8 @@ module App.Main {
     }
 
     angular.module("app")
-        .controller("mainController", ["$scope", "$http", "hotkeys", "navigationService", MainController])
+        .controller("mainController",
+        ["$scope", "$http", "hotkeys", "navigationService", "rootUrl", MainController])
         .directive("appMain",
         () => {
             return {

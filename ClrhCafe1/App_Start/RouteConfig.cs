@@ -12,7 +12,7 @@ namespace ClrhCafe1
 
             routes.MapRoute(
                 name: "Default",
-                url: "",
+                url: "{controller}/{action}",
                 defaults: new { controller = "Home", action = "Index" }
             );
         }
