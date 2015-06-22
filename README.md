@@ -15,7 +15,7 @@ IT勉強会コミュニティ「CLR/H」のアクティブメンバーが発起�
 
 - [Scripts/app](ClrhCafe1/Scripts/app)
  - [app.ts](ClrhCafe1/Scripts/app/app.ts#L19-L27)
- - [main/main.ts](ClrhCafe1/Scripts/app/main/main.ts#L17-L35)
+ - [main/main.ts](ClrhCafe1/Scripts/app/main/main.ts#L18-L40)
  - [common/hotkeysExtensions.ts](ClrhCafe1/Scripts/app/common/hotkeysExtensions.ts)
 - [Content/app](ClrhCafe1/Content/app)
  - [app.less](ClrhCafe1/Content/app/app.less#L29-L31)
