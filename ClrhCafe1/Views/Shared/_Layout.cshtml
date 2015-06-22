@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    @*
+        angularjs の初期化前に expression が表示されないように初期値と ng-bind の両対応
+    *@
+    <title app-header ng-bind="header.title">CLR/H ～Cafe～</title>
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")">
+    @Styles.Render("~/bundles/css")
+    @Styles.Render("~/bundles/appcss")
+</head>
+<body>
+    <div id="wrapper">
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">CLR/H ～Cafe～</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12" ng-cloak>
+                    <ng-view></ng-view>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/js")
+    @Scripts.Render("~/bundles/appjs")
+    @* RenderBody がないと怒られる…… *@
+    @RenderBody()
+</body>
+</html>
